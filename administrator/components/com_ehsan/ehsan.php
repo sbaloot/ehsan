@@ -11,6 +11,7 @@
 defined('_JEXEC') or die;
 
 // Access check.
+// sathe destresi ro barresi mikone. 
 if (!JFactory::getUser()->authorise('core.manage', 'com_ehsan'))
 {
 	return JError::raiseWarning(404, JText::_('JERROR_ALERTNOAUTHOR'));
