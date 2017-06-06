@@ -23,4 +23,19 @@ defined('_JEXEC') or die;
 
    ?>
 
+
+
+    <table class="table table-striped" id="lookList">
+
+        <tbody><?php echo $this->loadTemplate('body');?></tbody>
+
+    </table>
+
+
+
+
+
+
+
+
 </div>
