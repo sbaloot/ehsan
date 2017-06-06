@@ -16,4 +16,11 @@ defined('_JEXEC') or die;
 </div>
 <div id="j-main-container" class="span10">
 
+    <?php
+
+    echo "ehsan";
+   print_r($this->test2);
+
+   ?>
+
 </div>

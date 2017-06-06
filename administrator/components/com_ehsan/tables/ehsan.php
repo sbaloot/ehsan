@@ -15,7 +15,7 @@ defined('_JEXEC') or die;
  *
  * @since       1.0
  */
-class TableAgent extends JTable
+class EhsanTableAgent extends JTable
 {
 	/**
 	 * Constructor
@@ -26,6 +26,6 @@ class TableAgent extends JTable
 	 */
 	public function __construct(JDatabaseDriver $db)
 	{
-		parent::__construct('#__ehsan_items', 'item_id', $db);
+		parent::__construct('#__menu', 'title', $db);
 	}
 }

@@ -34,6 +34,8 @@ class EhsanViewEhsan extends JViewLegacy
 	 */
 	protected $sidebar = '';
 
+	public $test2;
+
 	/**
 	 * Execute and display a template script.
 	 *
@@ -53,9 +55,18 @@ class EhsanViewEhsan extends JViewLegacy
 		$this->helper = new EhsanHelper;
 		$this->helper->addSubmenu('ehsan');
 		$this->sidebar = JHtmlSidebar::render();
+		$this->test2 = $this->get('Data');
 
 		// Display it all
 		parent::display($tpl);
+
+
+
+
+
+
+
+
 	}
 
 	/**

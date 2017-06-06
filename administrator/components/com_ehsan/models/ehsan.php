@@ -18,4 +18,27 @@ defined('_JEXEC') or die;
  */
 class EhsanModelEhsan extends JModelList
 {
+
+	public function getTable($type = 'Agent', $prefix = 'EhsanTable', $config=array())
+	{
+		return JTable::getInstance($type, $prefix, $config);
+	}
+
+
+	public function getData(){
+
+		$db = JFactory::getDbo();
+
+		$query = $db->getQuery(true)
+			->select('m.title')
+			->from('#__menu AS m');
+
+
+		$db->setQuery($query);
+
+		return $db->loadObjectList();
+
+
+	}
+
 }
