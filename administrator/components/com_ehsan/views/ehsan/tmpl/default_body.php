@@ -6,16 +6,12 @@ defined('_JEXEC') or die('Restricted access');
 
 
 ?>
-<?php foreach ($this->test2 as $i => $item): ?>
+<?php foreach ($this->test2 as $row): ?>
 
-	<tr class="row<?php echo $i % 2; ?>">
-		<td class="order nowrap center hidden-phone">
+	<tr>
 
-			<?php echo $i; ?>
-
-		</td>
 		<td class="nowrap center">
-			<?php echo $item; ?>
+			<?php echo $row->title; ?>
 		</td>
 
 	</tr>
